@@ -10,3 +10,6 @@ const studentProfile = {
 };
 
 console.log(studenttProfile);
+
+//The issue in your code is a simple typo in the console.log() statement. You defined the object as studentProfile (with a single 't'), but you are trying to print studenttProfile (with a double 't').
+//This will cause a ReferenceError: studenttProfile is not defined.
