@@ -1,0 +1,1 @@
+# Activity 1: Javascript file Calculating General Weighted Average(GWA)
