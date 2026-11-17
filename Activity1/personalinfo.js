@@ -1,4 +1,4 @@
-const StudentProfile = { 
+const StudentProfile = {
     studentName: "Balbin, Benz Andrie",
     idNumber: "2026-6719",
     yearLevel: 2,
@@ -13,7 +13,6 @@ const coursesEnrolled = {
     subject5: "Networking 1",
     subject6: "Integrative Programming Technologies"
 };
-
 let grade1 = 80;
 let unit1 = 3;
 
@@ -33,30 +32,32 @@ let grade6 = 88;
 let unit6 = 3;
 
 
-let total_grade = (grade1 * unit1) + (grade2 * unit2) + (grade3 * unit3) + 
-                  (grade4 * unit4) + (grade5 * unit5) + (grade6 * unit6);
-                  
+let total_grade = (grade1 * unit1) + (grade2 * unit2) + (grade3 * unit3) +
+    (grade4 * unit4) + (grade5 * unit5) + (grade6 * unit6);
+
 let totalunit = unit1 + unit2 + unit3 + unit4 + unit5 + unit6;
 
 let gwa = total_grade / totalunit;
 
 let letter_grade_scale = "";
 
-if (gwa >= 98) {
+
+//Used boolean "&&"
+if (gwa >= 98 && gwa <= 100) {
     letter_grade_scale = "A+";
-} else if (gwa >= 94) {
+} else if (gwa >= 94 && gwa < 98) {
     letter_grade_scale = "A-";
-} else if (gwa >= 90) {
+} else if (gwa >= 90 && gwa < 94) {
     letter_grade_scale = "B+";
-} else if (gwa >= 87) {
+} else if (gwa >= 87 && gwa < 90) {
     letter_grade_scale = "B";
-} else if (gwa >= 83) {
+} else if (gwa >= 83 && gwa < 87) {
     letter_grade_scale = "B-";
-} else if (gwa >= 80) {
+} else if (gwa >= 80 && gwa < 83) {
     letter_grade_scale = "C";
-} else if (gwa >= 77) {
+} else if (gwa >= 77 && gwa < 80) {
     letter_grade_scale = "C";
-} else if (gwa >= 73) {
+} else if (gwa >= 73 && gwa < 77) {
     letter_grade_scale = "D";
 } else {
     letter_grade_scale = "F";
@@ -68,11 +69,11 @@ console.log("Year Level:", StudentProfile.yearLevel);
 console.log("Program:", StudentProfile.Program);
 
 console.log("======Courses Enrolled:=====");
-console.log( coursesEnrolled.subject1 + " - Grade: " + grade1 + ", Units: " + unit1);
-console.log( coursesEnrolled.subject2 + " - Grade: " + grade2 + ", Units: " + unit2);
-console.log( coursesEnrolled.subject3 + " - Grade: " + grade3 + ", Units: " + unit3);
-console.log( coursesEnrolled.subject4 + " - Grade: " + grade4 + ", Units: " + unit4);
-console.log( coursesEnrolled.subject5 + " - Grade: " + grade5 + ", Units: " + unit5);
-console.log( coursesEnrolled.subject6 + " - Grade: " + grade6 + ", Units: " + unit6);
+console.log(coursesEnrolled.subject1 + " - Grade: " + grade1 + ", Units: " + unit1);
+console.log(coursesEnrolled.subject2 + " - Grade: " + grade2 + ", Units: " + unit2);
+console.log(coursesEnrolled.subject3 + " - Grade: " + grade3 + ", Units: " + unit3);
+console.log(coursesEnrolled.subject4 + " - Grade: " + grade4 + ", Units: " + unit4);
+console.log(coursesEnrolled.subject5 + " - Grade: " + grade5 + ", Units: " + unit5);
+console.log(coursesEnrolled.subject6 + " - Grade: " + grade6 + ", Units: " + unit6);
 console.log("Calculated GWA:", gwa);
 console.log("Letter Grade Scale:", letter_grade_scale);
